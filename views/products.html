@@ -1,0 +1,64 @@
+<!--First background img-->
+<section class="product-bg"></section>
+<section class="search-bg">
+	<div class="flex">
+		<form action="" class="search-box">
+			Product Name:
+			<input type="text" name="Product Name" placeholder="Search Name" class="search" ng-model="nameFilter"><br>
+			<input type="submit" value="Update">
+		</form>
+		<div class="search-box-text">
+			<p> Sort by price: </p>
+		</div>
+		<form class="radio-container-price">
+			<input type="radio" name="price" value="0-49"> $0-$49 <br>
+			<input type="radio" name="price" value="50-99"> $50-$99 <br>
+			<input type="radio" name="price" value="100+"> $100+ <br>
+		</form>
+
+		<div class="search-box-text1">
+			<p> Sort by brand: </p>
+		</div>
+		<form class="radio-container-brand">
+			<input type="checkbox" name="nest" value="nest"> Nest <br>
+			<input type="checkbox" name="philips" value="philips"> Philips <br>
+			<input type="checkbox" name="Sensi" value="Sensi"> Sensi <br>
+			<input type="checkbox" name="kwikset" value="kwikset"> Kwikset <br>
+			<input type="checkbox" name="samsung" value="samsung"> Samsung <br>
+			<input type="checkbox" name="wemo" value="wemo"> WeMo <br>
+			<input type="checkbox" name="h2ovibe" value="h2ovibe"> H2oVibe <br>
+			<input type="checkbox" name="august" value="august"> August <br>
+			<input type="checkbox" name="amazon" value="amazon"> Amazon <br>
+			<input type="checkbox" name="jmgo" value="jmgo"> JmGO <br>
+			<input type="checkbox" name="tp-link" value="tp-link"> TP-Link <br>
+			<input type="checkbox" name="dreamspa" value="dreamspa"> DreamSpa <br>
+			<input type="checkbox" name="ring wi-fi" value="ring wi-fi"> Ring Wi-Fi <br>
+			<input type="checkbox" name="wink" value="wink"> Wink <br>
+			<input type="checkbox" name="ge" value="ge"> GE <br>
+		</form>
+	</div>
+</section>
+<section>
+	<div class="img-display">
+		<ul class="flex results-bg">
+			<li  ng-repeat="product in products | filter:nameFilter" class="product-pic-container">
+				<img class="product-pic" src="{{product.photo}}"/>
+			</li>
+		</ul>
+	</div>
+	<div class="products-display">
+		<ul class="flex results-bg">
+			<li ng-repeat="product in products | filter:nameFilter" class="product-text">
+				<div class="product-desc">
+					<div class="product-title">
+						{{product.name}}
+					</div>
+					<br>
+					<div class="product-text">
+						{{product.description}}
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>

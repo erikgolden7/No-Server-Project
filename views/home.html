@@ -1,0 +1,64 @@
+
+<!--First background img-->
+<section class="parallax arrow-loc">
+	<div class="arrow"></div>
+</section>
+
+<!--weather info-->
+<section class="flex">
+	<div class="weather-outer-circle flex"><br>
+		<div class="weather-inner-circle flex">
+			<!--{{weather.forecast.simpleforecast}}-->
+			<div class="forecast-title-text"> Todays Forecast: </div><br>
+			<div class="flex">
+				<div class="forecast-title-text">
+					Date/Time:
+				</div>
+				<div class="forecast-text">
+					{{weather.date.pretty}}
+				</div>
+			</div><br>
+			<div>
+				<span class="forecast-title-text">High:</span>
+				<span class="forecast-text"> {{weather.high.fahrenheit}}, </span>
+				<span class="forecast-title-text"> Low: </span>
+				<span class="forecast-text"> {{weather.low.fahrenheit}} </span>
+				<br><br>
+			</div>
+			<div class="forecast-title-text">
+				{{weather.conditions}}
+			</div>
+			<div>
+				<img ng-Src="{{weather.icon_url}}" alt = "weather icon">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Scrolling img-->
+<section class="parallax-two arrow-loc">
+	<div class="arrow"></div>
+</section>
+
+<!--Second background img-->
+<section class="parallax-three">
+	<div class="fade-pic1">
+		<img src = "images/living-1032733_1280.jpg" alt = "">
+	</div>
+	
+	<div class="fade-pic2">
+		<img src = "images/smart-watch-1783180_960_720.jpg" alt = "">
+	</div>
+
+	<div class="fade-pic3" >
+		<img src = "images/Logitech_Harmony_1000_Remote.jpg" alt = "">
+	</div>
+	<div class="fade-pic4" >
+		<img src = "images/ordinateur-apple-ipad.jpg" alt = "">
+	</div>
+</section>
+
+
+
+
+

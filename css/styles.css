@@ -1,0 +1,611 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+
+html{
+	height:100%;
+	}
+
+@media only screen and (max-device-width: 1024px) {
+	.parallax {
+		background-attachment: scroll;
+		}
+	}
+
+@media only screen and (min-width : 320px) {
+		
+	}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+	}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.parallax {
+		width: 100%;
+		height: 100%;
+		background-attachment: fixed;
+		background-size: contain;
+		}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+		
+	}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+		
+	}
+
+/*General styling*/
+html{
+    height:100%;
+}
+
+.title-text {
+	font-size: 18px;
+	color: black;
+	font-family: 'Playfair Display SC', serif;
+	margin: 15px 15px 0px 15px;
+	text-align: center;
+	font-weight: 800;
+	}
+
+.text {
+	font-size: 12px;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 15px 15px 15px 15px;
+	}
+
+.flex {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	}
+
+.parallax,.parallax-two,.parallax-three,.nav-bar,.arrow,.service-bg,.product-pic-container,.about-bg1,.about-parallax,.about-bg2,.contact-bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	}
+
+/*--------------------------------------------------------------------------------*/
+
+/*Home Page*/
+.parallax {
+	background-image: url('http://arizonaehomes.com/wp-content/uploads/2016/05/connected-home.jpg');
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+
+.parallax-two {
+	position: relative;
+	background-image: url('http://i.vimeocdn.com/video/421329670_1280x720.jpg');
+	height: 100vh;
+	width:100%;
+	background-size: cover;
+	}
+
+.parallax-three {
+	position: absolute;
+	background-image: url('https://static.pexels.com/photos/88737/pexels-photo-88737.jpeg');
+	height: 100vh;
+	background-attachment: fixed;
+	width:100%;
+	background-size: cover;
+	}
+
+.nav-bar {
+	position: fixed;
+	top:0px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	width: 100%;
+	height: 6vh;
+	background-image: url('http://kel-mc.net/images/dark-wood.jpg');
+	}
+
+.nav-item {
+	position: relative;
+	font-size: 16px;
+	border: thin black;
+	color: #fffde7;
+	font-family: 'Ubuntu', sans-serif;
+	top: 30%;
+	}
+
+.hover:hover {
+	height:3vh;
+	cursor: pointer;
+	}
+
+.titles {
+	position: absolute;
+	text-align: center;
+	width:100%;
+	top:40px;
+	font-size: 28px;
+	color: black;
+	}
+
+.arrow {
+	position: relative;
+	background-image: url('http://xdata.jpl.nasa.gov/static/img/down_arrow.png');
+	height:7vh;
+	width:7vw;
+	margin-top: 80vh;
+	background-size: contain;
+	}
+
+.arrow-loc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+
+.weather-outer-circle {
+	width:30vw;
+	height:50vh;
+	position: absolute;
+	top:30vh;
+	background-color: rgba(255, 249, 252, 0.71);
+	padding: 15px 10px 10px 10px;
+	border-radius: 50%;
+	}
+
+.weather-inner-circle {
+	width:20vw;
+	height:35vh;
+	position: absolute;
+	top:7.5vh;
+	left: 16.5%;
+	background-color: rgba(20, 132, 139, .90);
+	padding: 35px 10px 5px 10px;
+	border-radius: 50%;
+	}
+
+.forecast-title-text {
+	font-size: 14px;
+	font-weight: 800;
+	text-decoration: underline;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	}
+
+.forecast-text {
+	text-decoration: none !important;
+	font-weight: 400;
+	font-size: 12px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	padding-top: 3px;
+	}
+
+.fade-pic1,.fade-pic2,.fade-pic3,.fade-pic4,.fade-pic5,.fade-pic6 {
+
+	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: solid black 1px;
+	}
+
+.fade-pic1 {
+	bottom:50%;
+	background-image: url("../images/pexels-photo-196658.jpeg");
+	left: 15%;
+	width: 337px;
+	height: 239px;
+	}
+
+.fade-pic2 {
+	background-image: url("../images/124evz6.jpg");
+	bottom:50%;
+	right: 15%;
+	width: 337px;
+	height: 239px;
+	}
+
+.fade-pic3 {
+	background-image: url("../images/13580530035_8ab51fd34d.jpg");
+	bottom:5%;
+	left: 15%;
+	width: 337px;
+	height: 239px;
+	}
+
+.fade-pic4 {
+	background-image: url("../images/15207853585_b4bbec131a_b.jpg");
+	bottom:5%;
+	right: 15%;
+	width: 337px;
+	height: 239px;
+	}
+
+/*--------------------------------------------------------------------------------*/
+
+/*Service Page*/
+.service-bg {
+	background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/vas/newsf/v2/sf_services_tiles_710x404_homeservices._V292587151_.jpg');
+	height: 140vh;
+	background-attachment: fixed;
+	width:100%;
+	background-size: cover;
+	}
+
+.servicesCol {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	}
+
+.left-Col {
+	position: absolute;
+	top:10vh;
+	left:25%;
+	height:100vh;
+	width:25%;
+	}
+
+.right-Col {
+	position: absolute;
+	top:10vh;
+	right:25%;
+	height:100vh;
+	width:25%;
+	}
+
+.service1,.service2,.service3,.service4,.service5,.service6,.service7,.service8,.service9 ,.service10  {
+	position: relative;
+	background-color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	}
+
+.service-img2 {
+	background-image: url('https://mark.trademarkia.com/logo-images/ds-services-of-america/service-you-can-count-on-quality-you-can-trust-77249809.jpg');
+	width:35vw;
+	height:12vh;
+	margin-top: 5vh;
+	background-size: cover;
+	}
+
+.service1 {
+	background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwEY_0NjpXZug0Nc7V8bByIRZ23X3csfZzkTLVEv8Uaw5MFgTcSQ');
+	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service2 {
+	background-image: url('http://www.showmesolutions.net/images/logo.png');
+	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service3 {
+	background-image: url('http://www.shs-mt.com/images/SmartHomeSystems-top_03.png');
+	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service4 {
+	background-image: url('http://www.siliconslopes.com.s3.amazonaws.com/wp-content/uploads/2016/04/featured-vivintsmarthome.jpg');
+	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service5 {
+	background-image: url('http://yourhomesecuritywatch.com/wp-content/uploads/2016/09/wink-logo-knockout-01ef20014958f769f8c5a6d6081c2a02.png');	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service6 {
+	background-image: url('http://www.ihome.asia/wp-content/uploads/2014/07/NEW_iHome-Logo-Small.jpg');	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service7 {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmU1Vs_nbVeZWI1HIyQHVN13E1uwQrr_D3d8IfRk57yYEjWDRj');	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service8 {
+	background-image: url('http://www.smartintegrators.com/img/logo.png');	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service9 {
+	background-image: url('https://www.travelers.com/iw-images/resources/Individuals/Medium/CNET_smart_home_medium.jpg');	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+.service10 {
+	background-image: url('http://www.logoeps.net/wp-content/uploads/2016/11/nest-logo.jpg');	width:20vw;
+	height: 15vh;
+	margin-top: 5vh;
+	background-size: contain;
+	}
+
+/*--------------------------------------------------------------------------------*/
+
+/*Products*/
+.product-title {
+	font-size: 18px;
+	font-weight: 800;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 5px 5px;
+	color: #305de9;
+	}
+
+.product-text {
+	font-size: 12px;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	width: 100%;
+ padding-left: 5px;
+	padding-right: 5px;
+	}
+
+.product-bg {
+	background-image: url('https://static.pexels.com/photos/172292/pexels-photo-172292.jpeg');
+	position: fixed;
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	width:100%;
+	background-size: cover;
+	}
+
+.search-bg {
+	background-image: url('http://www.homedepot.com/catalog/productImages/400_compressed/a3/a3777dd9-bfa4-4aff-9717-65b7e4e84305_400_compressed.jpg');
+	position: fixed;
+	top:8vh;
+	left:20px;
+	height: 85vh;
+	width: 17%;
+	border: solid black 1px;
+	border-radius: 4px;
+	}
+
+.search-box {
+	position: fixed;
+	top:10vh;
+	left:28px;
+	height:10vh;
+	width:20vw;
+	}
+
+.search {
+	margin-bottom: 0.5vh;
+	width:15vw;
+	}
+
+.search-box-text {
+	position: absolute;
+	top:14vh;
+	left:1vw;
+	font-size: 14px;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: left;
+	font-weight: 800;
+	text-decoration: underline;
+	}
+
+.search-box-text1 {
+	top:31vh;
+	left:1vw;
+	position: absolute;
+	font-size: 14px;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: left;
+	font-weight: 800;
+	text-decoration: underline;
+	}
+
+.radio-container-price {
+	position: fixed;
+	top:25vh;
+	left:28px;
+	}
+
+.radio-container-brand {
+	position: fixed;
+	top:42vh;
+	left:28px;
+	}
+
+.results-bg {
+	background-color: rgba(255, 255, 255, 0.95);
+	border: solid black 1px;
+	}
+
+.products-display {
+	position: absolute;
+	top:8vh;
+	right:3.8%;
+	width:45%;
+	}
+
+.product-desc {
+	position: relative;
+	height:30vh;
+	width:100%;
+	border-bottom: solid black 1px;
+	}
+
+.img-display {
+	position: absolute;
+	top:8vh;
+	left:28%;
+	width:23%;
+	height: 100%;
+	}
+
+.product-pic-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:30vh;
+	width:40vh;
+	background-size: contain;
+	border-bottom: solid black 1px;
+	}
+
+.product-pic {
+	height:25vh;
+	width:15vw;
+	background: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:5px 5px 5px 5px;
+	}
+
+/*--------------------------------------------------------------------------------*/
+
+/*About Page*/
+.about-bg1 {
+	background-image: url('https://static.pexels.com/photos/24957/pexels-photo-24957.jpg');
+	height: 200vh;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+
+.about-parallax {
+	position: relative;
+	background-image: url('http://smarthome.com.pk/wp-content/uploads/2015/03/Banner11.png');
+	height: 60vh;
+	width:100%;
+	background-size: contain;
+	}
+
+.about-bg2 {
+	background-image: url('https://static.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg');
+	height: 100vh;
+	background-attachment: fixed;
+	width:100%;
+	background-size: cover;
+	}
+
+.about-intro {
+	position: absolute;
+	top: 20vh;
+	text-align: center;
+	font-size: 32px;
+	color: black;
+	background-color: rgba(255, 253, 241, 0.51);
+	padding:1px 3px 3px 3px;
+	height:6vh;
+	font-family: 'Playfair Display SC', serif;
+	border-radius: 5px;
+	}
+
+.textBox1,.textBox2,.textBox3,.textBox4,.textBox5,.textBox6,.textBox7 {
+	position: absolute;
+	background-color: rgba(255, 252, 243, 0.71);
+	border-radius: 5px;
+	}
+
+.textBox1 {
+	top: 85vh;
+	left: 5vw;
+	height:31vh;
+	width:40vw;
+	}
+
+.textBox2 {
+	top: 110vh;
+	right: 5vw;
+	height:33vh;
+	width:40vw;
+	}
+
+.textBox3 {
+	top: 135vh;
+	left: 5vw;
+	height:31vh;
+	width:40vw;
+	}
+
+.textBox4 {
+	top: 160vh;
+	right: 5vw;
+	height:33vh;
+	width:40vw;
+	}
+
+.textBox5 {
+	top: 275vh;
+	left: 5vw;
+	height:32vh;
+	width:40vw;
+	}
+
+.textBox6 {
+	top: 298vh;
+	right: 5vw;
+	height:40vh;
+	width:40vw;
+	}
+
+.textBox7 {
+	top: 329vh;
+	left: 5vw;
+	height:25vh;
+	width:40vw;
+	}
+
+/*--------------------------------------------------------------------------------*/
+
+/*Contact Page*/
+.contact-bg {
+	background-image: url('https://static.pexels.com/photos/6336/light-man-hand-pen.jpg');
+	height: 150vh;
+	background-attachment: fixed;
+	width:100%;
+	background-size: cover;
+	}
+
+.feedback-box {
+	
+	}
+
+.social-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	}
+
+.social-fb {
+	
+	}

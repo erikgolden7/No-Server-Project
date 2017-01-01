@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en" ng-app="smartApp">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<title>Smart Home Website</title>
+		<link rel = "stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/styles.css">
+		<link rel = "stylesheet" href = "css/animate.css">
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	</head>
+	<body>
+	
+		<ui-view></ui-view>
+		
+		<!--Nav bar, fixed to top-->
+		<nav class="nav-bar parallax-two">
+			<div class="nav-item hover" ui-sref="home">Home</div>
+			<div class="nav-item hover" ui-sref="products">Products</div>
+			<div class="nav-item hover" ui-sref="services">Services</div>
+			<div class="nav-item hover" ui-sref="about">About</div>
+			<div class="nav-item hover" ui-sref="contact">Contact Us</div>
+		</nav>
+		
+		<!--Declare JS scripts-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+		<script src="js/smartApp.js"></script>
+		<script src="js/controllers/homeCtrl.js"></script>
+		<script src="js/controllers/productsCtrl.js"></script>
+		<script src="js/controllers/servicesCtrl.js"></script>
+		<script src="js/controllers/aboutCtrl.js"></script>
+		<script src="js/controllers/contactCtrl.js"></script>
+		<script src="js/services/mainService.js"></script>
+		<script src="js/services/productService.js"></script>
+		<script src="js/directives/directive.js"></script>
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		<script src="js/jquery.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
